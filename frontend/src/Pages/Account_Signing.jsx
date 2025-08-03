@@ -104,12 +104,12 @@
           
           {/* Error/Success Messages */}
           {error && (
-            <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+            <div className="absolute z-1000 top-4 left-1/2 transform -translate-x-1/2 z-50 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
               {error}
             </div>
           )}
           {success && (
-            <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+            <div className="absolute z-1000 top-4 left-1/2 transform -translate-x-1/2 z-50 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
               {success}
             </div>
           )}
@@ -117,7 +117,7 @@
           
           {/* Sign Up Container */}
           <div className={`absolute top-0 h-full transition-all duration-500 ease-in-out left-0 w-1/2 ${
-            signInMode ? 'opacity-0 z-10' : 'transform translate-x-full opacity-100 z-50'
+            signInMode ? 'opacity-0 z-0' : 'transform translate-x-full opacity-100 z-50'
           }`}>
             <form onSubmit={handleSubmit} className="bg-white flex items-center justify-center flex-col px-12 h-full text-center">
               <h1 className="font-bold text-teal-600 text-2xl mb-6">Create Account</h1>
